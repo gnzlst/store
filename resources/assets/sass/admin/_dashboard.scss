@@ -1,0 +1,202 @@
+
+.dashboard {
+  //padding: 2rem 1rem;
+
+  .summary {
+    padding-bottom: 1rem;
+
+    @include breakpoint(small only) {
+      padding-bottom: 1rem;
+    }
+
+    .card {
+      margin: 0 auto;
+
+      &:hover {
+        .card-section {
+          .fa {
+            &.fa-shopping-cart {
+              font-size: 4.5em;
+            }
+
+            &.fa-money-bill-alt {
+              font-size: 4.5em;
+            }
+
+            &.fa-thermometer-empty {
+              font-size: 4.5em;
+            }
+
+            &.fa-users {
+              font-size: 4.5em;
+            }
+          }
+        }
+      }
+
+      .card-section {
+        .fa {
+          font-size: 2.5rem;
+          @include breakpoint(medium only) {
+            font-size: 0.9rem;
+          }
+
+          &.fa-shopping-cart {
+            color: #ff4500;
+            -webkit-transition: ease-in-out 1s;
+            -moz-transition: ease-in-out 1s;
+            -ms-transition: ease-in-out 1s;
+            -o-transition: ease-in-out 1s;
+            transition: ease-in-out 1s;
+          }
+
+          &.fa-money-bill-alt {
+            color: #00aa00;
+            -webkit-transition: ease-in-out 1s;
+            -moz-transition: ease-in-out 1s;
+            -ms-transition: ease-in-out 1s;
+            -o-transition: ease-in-out 1s;
+            transition: ease-in-out 1s;
+          }
+
+          &.fa-thermometer-empty {
+            color: #da8301;
+            -webkit-transition: ease-in-out 1s;
+            -moz-transition: ease-in-out 1s;
+            -ms-transition: ease-in-out 1s;
+            -o-transition: ease-in-out 1s;
+            transition: ease-in-out 1s;
+          }
+
+          &.fa-users {
+            color: #1e3596;
+            -webkit-transition: ease-in-out 1s;
+            -moz-transition: ease-in-out 1s;
+            -ms-transition: ease-in-out 1s;
+            -o-transition: ease-in-out 1s;
+            transition: ease-in-out 1s;
+          }
+        }
+
+        p, h4 {
+          @include breakpoint(medium only) {
+            font-size: 0.8rem;
+            font-family: 'Oswald', sans-serif;
+          }
+          margin: 0;
+          padding: 0;
+          text-align: right;
+          font-family: 'Oswald', sans-serif;
+        }
+      }
+
+      .card-divider {
+        border-top: 1px solid #c0c0c0;
+        background-color: #ffffff;
+
+        a {
+          color: #fff;
+          font-size: 1.5rem;
+          font-family: 'Oswald', sans-serif;
+        }
+
+        &.order-details {
+          background-color: #ff4500;
+
+          &:hover {
+            background-color: lighten(#ff4500, 3%);
+            transition: color 0.3s ease-in;
+          }
+
+          &:active {
+            background-color: lighten(#ff4500, 6%);
+          }
+
+          &:focus {
+            background-color: lighten(#ff4500, 9%);
+          }
+
+        }
+
+        &.products {
+          background-color: #da8301;
+
+          &:hover {
+            background-color: lighten(#da8301, 3%);
+            transition: color 0.3s ease-in;
+          }
+
+          &:active {
+            background-color: lighten(#da8301, 6%);
+          }
+
+          &:focus {
+            background-color: lighten(#da8301, 9%);
+          }
+
+        }
+
+        &.revenue {
+          background-color: #00aa00;
+
+          &:hover {
+            background-color: lighten(#00aa00, 3%);
+            transition: color 0.3s ease-in;
+          }
+
+          &:active {
+            background-color: lighten(#00aa00, 6%);
+          }
+
+          &:focus {
+            background-color: lighten(#00aa00, 9%);
+          }
+
+        }
+
+        &.signup {
+          background-color: #1e3596;
+
+          &:hover {
+            background-color: lighten(#1e3596, 3%);
+            transition: color 0.3s ease-in;
+          }
+
+          &:active {
+            background-color: lighten(#1e3596, 6%);
+          }
+
+          &:focus {
+            background-color: lighten(#1e3596, 9%);
+          }
+
+        }
+      }
+    }
+  }
+
+  .graph {
+
+    .fa-sync {
+      cursor: pointer;
+      color: #204d74;
+    }
+
+    .card {
+      .card-section{
+        h4{
+          font-family: 'Oswald', sans-serif;
+        }
+      }
+    }
+
+    canvas {
+      min-height: auto !important;
+      @include breakpoint(small only) {
+        height: auto !important;
+      }
+    }
+  }
+}
+
+

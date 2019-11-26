@@ -1,0 +1,11 @@
+{
+  "author": "Gonzalo Soto",
+  "description": "eCommerce for 5EWS",
+  "private": true,
+  "name": "mystore",
+  "version": "1.0.0",
+  "dependencies": {
+    "gulp": "~3.9.1",
+    "laravel-elixir": "~5.0.0"
+  }
+}

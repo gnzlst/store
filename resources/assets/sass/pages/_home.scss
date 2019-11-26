@@ -1,0 +1,110 @@
+$logo-img-folder: 'images';
+
+body {
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-image: url('/#{$logo-img-folder}/background/left.jpg'), url('/#{$logo-img-folder}/background/right.jpg');
+  background-color: #000;
+  background-position: calc(50% - 1120px) top, calc(50% + 1120px) top;
+
+  .main-wrapper {
+    background-color: #fff;
+  }
+}
+
+.home {
+  padding-top: 0.1rem;
+
+  .hero {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    .hero-slider {
+      img {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .display-products {
+    padding: 2rem;
+
+    @include breakpoint (small only) {
+      padding: 0.7rem;
+      text-align: center;
+    }
+
+    a {
+      color: #1779ba;
+
+      &:focus {
+        outline-style: none;
+      }
+    }
+
+    .card {
+      padding: 0.9rem;
+      margin-bottom: 1rem;
+
+      .card-section {
+        margin-bottom: 0.7rem;
+
+        img {
+          height: auto;
+          vertical-align: center;
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 450px;
+        }
+      }
+
+      .card-divider-more {
+
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        background: #fff;
+
+        .button {
+          border-radius: 0.2rem;
+          cursor: pointer;
+          font-size: 0.8rem;
+
+          &.more {
+            color: #204d74;
+            background-color: #fff;
+            border: 1px solid #204d74;
+          }
+        }
+      }
+
+      .card-divider-add-to-cart {
+
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        background: #fff;
+
+        .button {
+          border-radius: 0.2rem;
+          cursor: pointer;
+          font-size: 0.8rem;
+
+          &.cart {
+            color: #fff;
+            background-color: #bf0000;
+            border: 1px solid #bf0000;
+
+            &:hover {
+              background-color: lighten(#bf0000, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

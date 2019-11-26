@@ -1,0 +1,1 @@
+<h1>Page Not Found</h1><?php /**PATH C:\xampp\htdocs\mystore\resources\views/errors/404.blade.php ENDPATH**/ ?>
