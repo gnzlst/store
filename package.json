@@ -5,7 +5,7 @@
   "name": "mystore",
   "version": "1.0.0",
   "dependencies": {
-    "gulp": "~3.9.1",
-    "laravel-elixir": "~5.0.0"
+    "gulp": "~4.0.2",
+    "laravel-elixir": "~6.0.0-18"
   }
 }
